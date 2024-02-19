@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>
+</head>
+<body>
+    <form action="pizzeriaPeticion.jsp" method="post">
+       <h1>Pizzeria Online</h1>
+        <fieldset> 
+            <legend>Pizza's House</legend> 
+            <h3>Informacion Personal</h3>
+        
+        <label for="nombreCompleto">Nombre Completo: </label>
+        <input id="nombreCompleto" type="text" name="name" placeholder="Introduce aqui su nombre" required>
+        <br/>
+        <label for="contraseña">Contraseña:</label>
+        <input id="contraseña" type="password" name="pass" placeholder="Introduce aqui su contraseña">
+        <br/>
+        <label for="direccion">Dirección:</label>
+        <input id="direccion" type="text" name="address" placeholder="Introduce aqui la dirección" required>
+        <br/>
+        <label for="tel">Teléfono:</label>
+        <input id="tel" type="tel" name="Movil" placeholder="Introduce su número de teléfono" required>
+        <br/>
+        <label for="email">Correo Electronico:</label>
+        <input id="email" type="email" name="email" placeholder="Introduce su dirección de correo electronico">
+        <br/>
+        <label for="edad">Edad:</label>
+        <input id="edad" type="number"min="16" max="140" placeholder="Edad" required>
+
+        <br/>
+        <br/>
+        <h3>Pedido</h3>
+        <label for="tamaño_pizza">Tamaño: </label> <br/>
+        <input type="radio" name="tamaño_pizza" value="Tpequeño">Pequeña (8 pulgadas) <br/>
+        <input type="radio" name="tamaño_pizza" value="Tmediano">Mediana (12 pulgadas) <br/>
+        <input type="radio" name="tamaño_pizza" value="Tgrande">Grande (16 pulgadas) <br/>
+        <br/>
+        <label for="masa_pizza">Tipo de masa: </label> <br/>
+        <input type="radio" name="masa_pizza" value="Mfina" checked>Masa fina <br/>
+        <input type="radio" name="masa_pizza" value="Mnormal">Masa normal <br/>
+        <input type="radio" name="masa_pizza" value="Mgruesa">Masa gruesa <br/>
+        <br/>
+        <label for="ingredientes">Ingredientes: </label> <br/>
+        <input type="checkbox" name="ingredientes" value="PProni">Pepperoni <br/>
+        <input type="checkbox" name="ingredientes" value="JV">Judías verdes <br/>
+        <input type="checkbox" name="ingredientes" value="Jam">Jamón <br/>
+        <input type="checkbox" name="ingredientes" value="Alca">Alcaparras <br/>
+        <input type="checkbox" name="ingredientes" value="Actunas">Aceitunas <br/>
+        <input type="checkbox" name="ingredientes" value="Cblla">Cebolla <br/>
+        <input type="checkbox" name="ingredientes" value="Salch">Salchicha <br/>
+        <input type="checkbox" name="ingredientes" value="Pñ">Piña <br/>
+        <br/>
+        <label for="salsa_pizza">Tipo de salsa: </label> <br/>
+        <input type="radio" name="salsa_pizza" value="T" checked>Tomate <br/>
+        <input type="radio" name="salsa_pizza" value="B">Barbacoa <br/>
+        <input type="radio" name="salsa_pizza" value="P">Pesto <br/>
+        <input type="radio" name="salsa_pizza" value="SinS">Sin salsa <br/>
+        <br/>
+        <label for="extrainfo">Instrucciones Especiales:</label><br/>
+        <textarea name="extra" id="" cols="50" rows="10"></textarea> <br/>
+        <br/>
+        <h3>Pago</h3>
+        <label for="pago">Métodos de pago: </label> 
+        <select name="pagos" id="pagos">
+        <option value="pagos">Efectivo</option>
+        <option value="pagos" selected>Tarjeta de credito </option>
+        <option value="pagos">PayPal</option>
+        </select>
+        <br/>
+        <br/>
+
+        <label for="terminos">Acepta los <a href="terminos.html">Terminos de servicio</a></label>
+        <input type="checkbox" name="terminos" value="Y"> <br/> <br/>
+        <input type="submit" value="Hacer pedido">
+        <input type="reset" value="Borrar todo">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
