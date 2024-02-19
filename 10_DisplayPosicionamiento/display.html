@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="css/display.css">
+    <style>
+        #oculto{
+            display: none;
+        }
+        #oculto2{
+            display: none;
+        }
+    </style>
+    <script>
+        function alert() {
+            var oculto = document.getElementById("oculto")
+            oculto.style.display = "block"
+        }
+        function alert2() {
+        var obj=document.getElementById("oculto2");
+          if (obj.style.display == "block") obj.style.display = "none";
+          else obj.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h3>Ej 1</h3>
+    <div class="inline">Esto es un div inline</div>
+    <div class="inline">Esto es otro div inline</div>
+    <br/>
+    <br/>
+    <div class="block">Esto es un div block</div>
+    <div class="block">Esto es otro div block</div>
+    <hr/>
+    <h3>Ej 2</h3>
+    <span class="block">Esto es un span block</span>
+    <span class="block">Esto es otro span block</span>
+    <br/>
+    <br/>
+    <span class="inline">Esto es un span inline</span>
+    <span class="inline">Esto es otro span inline</span>
+    <hr/>
+    <h3>Ej 3</h3>
+    <a class="inlineblock" href="google.com">Ir a google</a>
+    <a class="inlineblock" href="elpais.es">Ir a ElPais</a>
+    <p>Al inline-block si que le afecta el widht y el height , entonces al ponerlo en 30px, no se ve por completo el texto.
+        Si se pone en inline normal, no le afectara el widht.
+    </p>
+    <hr/>
+    <h3>Ej 4</h3>
+    <button onmousedown="alert()">Presiona para ver</button>
+    <p class="none">Etiqueta oculta</p>
+    <div id="oculto"><p>Bienvenido a JavaScript</p></div>
+    <br/>
+    <button onclick="alert2()">Presiona para ver y vuelve a presionar para esconder</button>
+    <div id="oculto2"><p>Bienvenido a JavaScript</p></div>
+
+    
+</body>
+</html>

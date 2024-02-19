@@ -1,0 +1,24 @@
+.inline{
+    display: inline;
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+}
+.block{
+    display: block;
+    background-color: black;
+    color: white;
+    border: 1px solid blue;
+    width: 150px;
+}
+.inlineblock{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: 1px solid yellow;
+    width: 30px;
+}
+.none{
+    display: none;
+    
+}

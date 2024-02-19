@@ -1,0 +1,39 @@
+.fixed{
+    position: fixed;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    width: 100%;
+}
+.relative{
+    position: relative;
+    top: 194px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+.absolute{
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 200px;
+    left: 40%;
+    height: 100px;
+    width: 500px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.static{
+    position: static;
+    background-color: black;
+    color: white;
+}
