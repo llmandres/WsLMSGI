@@ -1,0 +1,30 @@
+    <!ELEMENT Videojuegos (videojuego)>
+
+    <!ELEMENT videojuego (nombre,fecha,nota,programadores,compania)>
+    <!ATTLIST videojuego id ID #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT fecha (dia,mes,anio)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT nota (#PCDATA)>
+
+    <!ELEMENT programadores (programador*)>
+    <!ELEMENT programador (nombre_programador,apellidos,DNI,fecha_nacimiento,direccion)>
+    <!ATTLIST programador id ID #REQUIRED>
+    <!ELEMENT nombre_programador (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT fecha_nacimiento (#PCDATA)>
+
+
+    <!ELEMENT compania (nombre_compania,NIF,direccion)>
+    <!ATTLIST compania id ID #REQUIRED>
+    <!ELEMENT nombre_compania (#PCDATA)>
+    <!ELEMENT NIF (#PCDATA)>
+
+    <!ELEMENT direccion (tipo_via,nombre_via,codigo_postal,pais)>
+    <!ELEMENT tipo_via (#PCDATA)>
+    <!ELEMENT nombre_via (#PCDATA)>
+    <!ELEMENT codigo_postal (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>

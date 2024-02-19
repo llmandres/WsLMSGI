@@ -1,0 +1,63 @@
+<!DOCTYPE Videojuegos SYSTEM "Videojuego.dtd">
+<Videojuegos>
+    <videojuego id="AAA1">
+    <nombre> Persona 5 </nombre>
+    <fecha>
+    <dia> 16 </dia>
+    <mes> septiembre </mes>
+    <anio> 2016 </anio>
+    </fecha>
+    <nota> 9 </nota>
+    <programadores>
+        <programador id="BBB1">
+            <nombre_programador>Juan</nombre_programador>
+            <apellidos>Sanchez Gimenez</apellidos>
+            <DNI>Y4526607Z</DNI>
+            <fecha_nacimiento>20/03/1990</fecha_nacimiento>
+            <direccion> 
+                <tipo_via>Avenida</tipo_via>
+                <nombre_via>Avenida de las flores</nombre_via>
+                <codigo_postal>27384</codigo_postal>
+                <pais>España</pais>
+            </direccion>
+        </programador>
+        <programador id="BBB2">
+            <nombre_programador>Maria</nombre_programador>
+            <apellidos>Socorro Moya </apellidos>
+            <DNI>X2964126R</DNI>
+            <fecha_nacimiento>10/06/1979</fecha_nacimiento>
+            <direccion> 
+                <tipo_via>Avenida</tipo_via>
+                <nombre_via>Avenida de Fuenlabrada</nombre_via>
+                <codigo_postal>28495</codigo_postal>
+                <pais>España</pais>
+            </direccion>
+        </programador>
+        <programador id="BBB3">
+            <nombre_programador>Juan</nombre_programador>
+            <apellidos>Pablo Pérez</apellidos>
+            <DNI>X5041505C</DNI>
+            <fecha_nacimiento>02/03/2000</fecha_nacimiento>
+            <direccion> 
+                <tipo_via>Calle</tipo_via>
+                <nombre_via>Calle Acacia</nombre_via>
+                <codigo_postal>24739</codigo_postal>
+                <pais>España</pais>
+            </direccion>
+        </programador>
+    </programadores>
+    <compania id="AAA2">
+        <nombre_compania>Sega / Atlus</nombre_compania>
+        <NIF>78735639S</NIF>
+        <direccion> 
+          <tipo_via>Calle</tipo_via>
+          <nombre_via>4-chōme-22-15 Ōi</nombre_via>
+          <codigo_postal> Tokyo 140-0014</codigo_postal>
+          <pais>Japón</pais>
+        </direccion>
+    </compania>
+    
+    
+    </videojuego>
+    
+    </Videojuegos>

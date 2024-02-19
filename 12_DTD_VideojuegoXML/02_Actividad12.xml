@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+  <!ELEMENT biblioteca (nombre,seccion*)>
+  <!ATTLIST biblioteca codigo CDATA "B_67">
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT seccion (libro*)>
+  <!ATTLIST seccion categoria (Novela | Ciencia_ficcion | Aventura | Historia) #REQUIRED>
+  <!ATTLIST seccion pasillo CDATA #IMPLIED>
+  <!ELEMENT libro (titulo,autor+,resumen?,anio?,editorial)>
+  <!ATTLIST libro id ID #REQUIRED>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT resumen (#PCDATA)>
+  <!ELEMENT anio (#PCDATA)>
+  <!ELEMENT editorial (nombre,ciudad,codigo?)>
+  <!ELEMENT codigo (#PCDATA)>
+  <!ELEMENT ciudad (#PCDATA)>
+
+  <!ENTITY tolkien "J.R.R. Tolkien">
+
+]>
+<biblioteca codigo="B_67">
+  <nombre>Biblioteca nacional</nombre>
+  <seccion categoria="Aventura">
+    <libro id="L1">
+      <titulo>El señor de los anillos</titulo>
+      <autor>&tolkien;</autor>
+      <resumen>Un viaje épico para destruir un anillo mágico.</resumen>
+      <editorial>
+        <nombre>Editorial Fantástica</nombre>
+        <ciudad>Barcelona</ciudad>
+      </editorial>
+    </libro>
+    <libro id="L2">
+      <titulo>Harry Potter y la piedra filosofal</titulo>
+      <autor>J.K. Rowling</autor>
+      <resumen>Las aventuras de un joven mago en Hogwarts.</resumen>
+      <anio>1997</anio>
+      <editorial>
+        <nombre>Ediciones Mágicas</nombre>
+        <ciudad>Londres</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <seccion categoria="Novela" pasillo="P3">
+    <libro id="L3">
+      <titulo>Cien años de soledad</titulo>
+      <autor>Gabriel García Márquez</autor>
+      <resumen>La historia de la familia Buendía en Macondo.</resumen>
+      <anio>1997</anio>
+      <editorial>
+        <nombre>Ediciones Macondo</nombre>
+        <ciudad>Bogotá</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <seccion categoria="Ciencia_ficcion">
+    <libro id="L4">
+      <titulo>1984</titulo>
+      <autor>George Orwell</autor>
+      <resumen>Un futuro distópico donde el pensamiento está controlado.</resumen>
+      <editorial>
+        <nombre>Editorial Distopía</nombre>
+        <ciudad>Londres</ciudad>
+        <codigo>ED45TR</codigo>
+      </editorial>
+    </libro>
+    <libro id="L5">
+      <titulo>Fundación</titulo>
+      <autor>Isaac Asimov</autor>
+      <resumen>La historia de la Fundación para prever el futuro galáctico.</resumen>
+      <anio>1997</anio>
+      <editorial>
+        <nombre>Ediciones Galácticas</nombre>
+        <ciudad>Nueva York</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+</biblioteca>
