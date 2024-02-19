@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudad codigo_identificador="BB-232" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:noNamespaceSchemaLocation= "XSD14.xsd">
+    <nombre_ciudad>Barcelona</nombre_ciudad>
+    <poblacion>500</poblacion>
+    <alcalde edad="45">
+      <nombre>Carlos</nombre>
+      <apellidos>Gonzalez Perez</apellidos>
+      <telefono>+34661435678</telefono>
+      <tarjeta_credito>1234 5678 9012 3456</tarjeta_credito>
+      <correo_electronico>carlos@example.com</correo_electronico>
+    </alcalde>
+    <funcionarios>
+      <funcionario id="F001">
+        <nombre_apellidos_funcionario>Juan Martinez</nombre_apellidos_funcionario>
+        <codigo_postal>08001</codigo_postal>
+        <fecha_nacimiento>15/03/1980</fecha_nacimiento>
+        <contrasenia>A21@232323d</contrasenia>
+        <cuenta_bancaria>ES1234 5678 9012</cuenta_bancaria>
+      </funcionario>
+      <funcionario id="F002">
+        <nombre_apellidos_funcionario>Maria Lopez</nombre_apellidos_funcionario>
+        <codigo_postal>08002</codigo_postal>
+        <fecha_nacimiento>20/05/1985</fecha_nacimiento>
+        <contrasenia>X32@2gfz3d</contrasenia>
+        <cuenta_bancaria>ES5678 9012 3456</cuenta_bancaria>
+      </funcionario>
+      </funcionarios>
+  </ciudad>
