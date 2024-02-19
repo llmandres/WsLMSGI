@@ -1,0 +1,38 @@
+header {
+    color: yellow;
+    background-color: black;
+    text-align: center;
+}
+.blanco{
+    color: white;
+}
+.backgris {
+    background-color: #f0f0f0;
+}
+.azul{
+    color: blue;
+}
+.backrojo{
+    background-color: red;
+}
+footer{
+    color: white;
+    background-color: darkblue;
+}
+#gtasix{
+    background-color: black;
+    color: bisque;
+}
+#gojo{
+    background-color: black;
+    color: purple;
+}
+h5{
+    text-align: center;
+}
+.lightpurple{
+    color: lightpink;
+}
+.verdelima{
+    color: greenyellow;
+}
