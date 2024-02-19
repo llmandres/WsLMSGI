@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="empresa">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nombre">
+            <xs:simpleType>
+                <!-- Min valor 3 Max valor 25 de el nombre de empresa -->
+                <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="3"/>
+                    <xs:maxInclusive value="25"/>
+                </xs:restriction>
+             </xs:simpleType>
+            </xs:element>
+            <xs:element name="espaniola"></xs:element>
+            <xs:element name="capitalSocial">
+                <xs:complexType>
+                    <xs:simpleContent>
+                         <!-- Dentro de la etiqueta capitalSocial se introduce un numero double-->
+                        <xs:extension base="xs:double">
+                            <xs:attribute name="moneda" use="required">
+                                <!-- En el atributo moneda solo se puede introducir euros, dolares y yenes -->
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="euros"/>
+                                        <xs:enumeration value="dolares"/>
+                                        <xs:enumeration value="yenes"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="direccion">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="tipoVia">
+                            <!-- tipoVia solo podra tener estos valores -->
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                            <xs:enumeration value="Plaza"></xs:enumeration>
+                            <xs:enumeration value="Calle"></xs:enumeration>
+                            <xs:enumeration value="Via"></xs:enumeration>
+                            <xs:enumeration value="Camino"></xs:enumeration>
+                        </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="nombreVia"></xs:element>
+                        <xs:element name="CP"></xs:element>
+                        <xs:element name="pais"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="empleados">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="empleado" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="nombre"></xs:element>
+                                    <xs:element name="apellidos"></xs:element>
+                                    <xs:element name="extranjero"></xs:element>
+                                    <xs:element name="fechaNacimiento"></xs:element>
+                                    <xs:element name="salario">
+                                        <xs:simpleType>
+                                            <!-- El salario sera entre 900 y 5000 -->
+                                            <xs:restriction base="xs:integer">
+                                                <xs:minInclusive value="900"></xs:minInclusive>
+                                                <xs:maxExclusive value="5000"></xs:maxExclusive>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="direccion" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:all>
+                                                <xs:element name="direccion_empleado">
+                                                    <xs:simpleType>
+                                                        <!-- La dirección del empleado es maximo de 250 caracteres. -->
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:maxLength value="250"></xs:maxLength>
+
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:element>
+                                                <xs:element name="pais"></xs:element>
+                                            </xs:all>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <!-- Cambio estaCasado a opcional y autocierre -->
+                                    <xs:element name="estaCasado" minOccurs="0">
+                                        <xs:complexType />
+                                    </xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="DNI">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:length value="8"></xs:length>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <!-- Atributo NIF de Empresa -->
+        <xs:attribute name="NIF" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:length value="9"></xs:length>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <!-- Atributo fecha de creacion a empresa -->
+        <xs:attribute name="FechaCreacion" type="xs:date" use="optional" >
+        </xs:attribute>
+          <!-- Atributo Pais a empresa QUE ES UNICAMENTE ESPAÑA -->
+        <xs:attribute name="Pais" type="xs:string" fixed="españa" use="required">
+        </xs:attribute>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

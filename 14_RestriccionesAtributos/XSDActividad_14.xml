@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa NIF="273849208" FechaCreacion="2002-10-01" Pais="españa" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:noNamespaceSchemaLocation= "XSDActividad_14.xsd">
+    <nombre>22</nombre>
+    <espaniola>true</espaniola>
+    <capitalSocial moneda="euros">100000.00</capitalSocial>
+    <direccion>
+        <tipoVia>Calle</tipoVia>
+        <nombreVia>Gran Vía</nombreVia>
+        <CP>28001</CP>
+        <pais>ESPAÑA</pais>
+    </direccion>
+    <empleados>
+        <empleado DNI="18395748">
+            <nombre>Juan</nombre>
+            <apellidos>Pérez Gómez</apellidos>
+            <extranjero>false</extranjero>
+            <fechaNacimiento>1990-01-01</fechaNacimiento>
+            <salario>3000</salario>
+            <direccion>
+                <direccion_empleado>Calle Gran Vía 67, Madrid</direccion_empleado>
+                <pais>ESPAÑA</pais>
+            </direccion>
+            <estaCasado />
+        </empleado>
+        <empleado DNI="7483958X">
+            <nombre>Maria</nombre>
+            <apellidos>Ruiz López</apellidos>
+            <extranjero>true</extranjero>
+            <fechaNacimiento>1985-05-15</fechaNacimiento>
+            <salario>940</salario>
+            <direccion>
+                <pais>ESPAÑA</pais>
+                <direccion_empleado>Av. Diagonal 123, Barcelona</direccion_empleado>
+            </direccion>
+        </empleado>
+    </empleados>
+</empresa>
