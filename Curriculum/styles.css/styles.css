@@ -1,0 +1,31 @@
+body{
+    background-image: url(../imgs/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pequeño{
+    width: 50px;
+}
+.Redes{
+    margin-bottom: 30px;
+    opacity: 0.9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.Curriculum{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+    width: 800px;
+    opacity: 0.9;
+    padding-left: 6px;
+    border: 1px black solid;
+    margin-left: 25%
+}
+.hr{
+    height: 2px;
+    background-color: black;
+}
+.pie{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
