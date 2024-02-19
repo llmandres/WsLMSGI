@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Actividad13.xsd">
+
+    <nombre>Biblioteca Española</nombre>
+    <seccion>
+        <libro>
+            <titulo>El señor de los anillos</titulo>
+            <autor>J.R.R. Tolkien</autor>
+            <resumen>Una historia épica de la Tierra Media y la lucha contra Sauron.</resumen>
+            <editorial>
+                <nombre>Editorial Épica</nombre>
+                <ciudad>Madrid</ciudad>
+            </editorial>
+        </libro>
+        <libro>
+            <titulo>Narnia: El león, la bruja y el armario</titulo>
+            <autor>C.S. Lewis</autor>
+            <anio>1950</anio>
+            <resumen>Aventuras mágicas de niños en el mundo de Narnia.</resumen>
+            <editorial>
+                <nombre>Libros Encantados</nombre>
+                <ciudad>Londres</ciudad>
+            </editorial>
+        </libro>
+    </seccion>
+    <seccion>
+        <libro>
+            <titulo>Crónica de una muerte anunciada</titulo>
+            <autor>Gabriel García Márquez</autor>
+            <anio>1981</anio>
+            <resumen>La narrativa de un asesinato anunciado en un pequeño pueblo.</resumen>
+            <editorial>
+                <nombre>Ediciones Realismo Mágico</nombre>
+                <ciudad>Bogotá</ciudad>
+            </editorial>
+        </libro>
+    </seccion>
+    <seccion>
+        <libro>
+            <titulo>Un mundo feliz</titulo>
+            <autor>Aldous Huxley</autor>
+            <resumen>Una visión distópica de la sociedad futura condicionada genéticamente.</resumen>
+            <editorial>
+                <nombre>Ediciones Utopía</nombre>
+                <ciudad>Londres</ciudad>
+                <codigo>ED78UH</codigo>
+            </editorial>
+        </libro>
+        <libro>
+            <titulo>Neuromante</titulo>
+            <autor>William Gibson</autor>
+            <anio>1984</anio>
+            <resumen>Aventuras ciberpunk en un mundo dominado por la tecnología.</resumen>
+            <editorial>
+                <nombre>Ediciones Cyberpunk</nombre>
+                <ciudad>Tokio</ciudad>
+            </editorial>
+        </libro>
+    </seccion>
+    <!-- Puedes agregar más secciones y libros según sea necesario -->
+</biblioteca>

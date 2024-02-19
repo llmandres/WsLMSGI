@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="empresa">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nombre"></xs:element>
+            <xs:element name="NIF"></xs:element>
+            <xs:element name="espaniola"></xs:element>
+            <xs:element name="capitalSocial"></xs:element>
+            <xs:element name="direccion">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="tipoVia"></xs:element>
+                        <xs:element name="nombreVia"></xs:element>
+                        <xs:element name="CP"></xs:element>
+                        <xs:element name="pais"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="empleados">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="empleado" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="nombre"></xs:element>
+                                    <xs:element name="apellidos"></xs:element>
+                                    <xs:element name="DNI"></xs:element>
+                                    <xs:element name="extranjero"></xs:element>
+                                    <xs:element name="fechaNacimiento"></xs:element>
+                                    <xs:element name="salario"></xs:element>
+                                    <xs:element name="direccion" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:all>
+                                                <xs:element name="direccion_empleado"></xs:element>
+                                                <xs:element name="pais"></xs:element>
+                                            </xs:all>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="casado" type="xs:boolean"></xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

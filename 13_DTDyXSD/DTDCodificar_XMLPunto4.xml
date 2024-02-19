@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa [
+    <!ELEMENT empresa (nombre, NIF, espaniola, capitalSocial, direccion_empresa, empleados)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT NIF (#PCDATA)>
+    <!ELEMENT espaniola (#PCDATA)>
+    <!ELEMENT capitalSocial (#PCDATA)>
+    <!ELEMENT direccion_empresa (tipoVia, nombreVia, CP, pais)>
+    <!ELEMENT tipoVia (#PCDATA)>
+    <!ELEMENT nombreVia (#PCDATA)>
+    <!ELEMENT CP (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+
+    <!ELEMENT empleados (empleado*)>
+    <!ELEMENT empleado (nombre, apellidos, DNI, extranjero, fechaNacimiento, salario, direccion_empleado* , casado)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT extranjero (#PCDATA)>
+    <!ELEMENT fechaNacimiento (#PCDATA)>
+    <!ELEMENT salario (#PCDATA)>
+    <!ELEMENT direccion_empleado (direccion_empleado_, pais)>
+    <!ELEMENT direccion_empleado_ (#PCDATA)>
+    <!ELEMENT casado (#PCDATA)>
+]>
+<empresa>
+    <nombre>Mi Empresa</nombre>
+    <NIF>12345678A</NIF>
+    <espaniola>true</espaniola>
+    <capitalSocial>100000.00</capitalSocial>
+    <direccion_empresa>
+        <tipoVia>Calle</tipoVia>
+        <nombreVia>Gran Vía</nombreVia>
+        <CP>28001</CP>
+        <pais>ESPAÑA</pais>
+    </direccion_empresa>
+    <empleados>
+        <empleado>
+            <nombre>Juan</nombre>
+            <apellidos>Pérez Gómez</apellidos>
+            <DNI>12345678B</DNI>
+            <extranjero>false</extranjero>
+            <fechaNacimiento>1990-01-01</fechaNacimiento>
+            <salario>50000.00</salario>
+            <direccion_empleado>
+                <direccion_empleado_>Calle Gran Vía 67, Madrid</direccion_empleado_>
+                <pais>ESPAÑA</pais>
+            </direccion_empleado>
+            <casado>true</casado>
+        </empleado>
+        <empleado>
+            <nombre>Maria</nombre>
+            <apellidos>Ruiz López</apellidos>
+            <DNI>98765432C</DNI>
+            <extranjero>true</extranjero>
+            <fechaNacimiento>1985-05-15</fechaNacimiento>
+            <salario>60000.00</salario>
+            <direccion_empleado>
+                <direccion_empleado_>Av. Diagonal 123, Barcelona</direccion_empleado_>
+                <pais>ESPAÑA</pais>
+            </direccion_empleado>
+            <casado>false</casado>
+        </empleado>
+    </empleados>
+</empresa>
