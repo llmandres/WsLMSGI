@@ -1,0 +1,39 @@
+{"videojuegos": {
+    "id" : "A",
+    "nombre":"Persona 5",
+    "fecha_creacion":{
+    "dia": 16,
+    "mes": "Septiembre",
+    "anio": 2016
+    },  
+    "nota":9,
+    "programadores" : [
+        {
+            "id" : 1,
+            "nombre" : "Juan",
+            "apellidos" : "Sanchez Gimenez",
+            "DNI" : "Y4526607Z",
+            "direccion" : {
+                "tipo_via" : "Avenida",
+                "nombre_via" : "Avenida de las flores",
+                "codigo_postal" : 27384,
+                "pais": "España"
+            }
+        {
+                "id" : 1,
+                "nombre" : "Juan",
+                "apellidos" : "Sanchez Gimenez",
+                "DNI" : "Y4526607Z",
+                "direccion" : {
+                    "tipo_via" : "Avenida",
+                    "nombre_via" : "Avenida de las flores",
+                    "codigo_postal" : 27384,
+                    "pais": "España"
+                }
+
+        }
+    ]
+} 
+
+
+}
