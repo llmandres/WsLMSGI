@@ -1,0 +1,54 @@
+html{
+    margin: 20px;
+    background-image: url(../imgs/patron.jpg);
+}
+body{
+    background-image: url(../imgs/lol2023worlds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+}
+section{
+    color: white
+}
+.primerarticulo{
+    width: 60%;
+    height: 60%;
+}
+.segundoarticulo{
+    width: 500px;
+    height: 500px;
+}
+.tercerarticulo{
+    width: 60%;
+    height: 60%;
+}
+p{
+    font: bold;
+}
+.cuartoarticulo{
+    height: 500px;
+    width: 500px;
+}
+.textoprimero{
+    font-size: 30px;
+}
+.textosegundo{
+    font-size: 1.4em;
+}
+.textotercero{
+    font-size: 120%;
+}
+.textocuarto{
+    font-size: 2vw;
+}
+.primeracabecera{
+    font-size: 10px;
+}
+.segundacabecera{
+    font-size: 2em;
+}
+.colorarticle2{
+    color: black;
+}
