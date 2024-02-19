@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Videojuegos>
+<videojuego id="A">
+<nombre> Persona 5 </nombre>
+<fecha_creacion>
+<dia> 16 </dia>
+<mes> septiembre </mes>
+<anio> 2016 </anio>
+</fecha_creacion>
+<nota> 9 </nota>
+<programadores>
+    <programador id="1">
+        <nombre>Juan</nombre>
+        <apellidos>Sanchez Gimenez</apellidos>
+        <DNI>Y4526607Z</DNI>
+        <fecha_nacimiento>20/03/1990</fecha_nacimiento>
+        <direccion> 
+            <tipo_via>Avenida</tipo_via>
+            <nombre_via>Avenida de las flores</nombre_via>
+            <codigo_postal>27384</codigo_postal>
+            <pais>España</pais>
+        </direccion>
+    </programador>
+    <programador id="2">
+        <nombre>Maria</nombre>
+        <apellidos>Socorro Moya </apellidos>
+        <DNI>X2964126R</DNI>
+        <fecha_nacimiento>10/06/1979</fecha_nacimiento>
+        <direccion> 
+            <tipo_via>Avenida</tipo_via>
+            <nombre_via>Avenida de Fuenlabrada</nombre_via>
+            <codigo_postal>28495</codigo_postal>
+            <pais>España</pais>
+        </direccion>
+    </programador>
+    <programador id="3">
+        <nombre>Juan</nombre>
+        <apellidos>Pablo Pérez</apellidos>
+        <DNI>X5041505C</DNI>
+        <fecha_nacimiento>02/03/2000</fecha_nacimiento>
+        <direccion> 
+            <tipo_via>Calle</tipo_via>
+            <nombre_via>Calle Acacia</nombre_via>
+            <codigo_postal>24739</codigo_postal>
+            <pais>España</pais>
+        </direccion>
+    </programador>
+</programadores>
+<compañia id="1">
+    <nombre>Sega / Atlus</nombre>
+    <NIF>78735639S</NIF>
+    <direccion> 
+      <tipo_via>Calle</tipo_via>
+      <nombre_via>4-chōme-22-15 Ōi</nombre_via>
+      <codigo_postal> Tokyo 140-0014</codigo_postal>
+      <pais>Japón</pais>
+    </direccion>
+</compañia>
+<web_asociada> 
+  <![CDATA[ 
+        <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Asociada</title>
+        <style>
+         body{
+             background-image: url(imgs/backgroundpersona.jpg);
+             background-repeat: no-repeat;
+             background-size: cover;
+         }
+         .center{
+             text-align: center;
+         }
+         .rojo{
+             color: red;
+         }
+         .medium{
+             height: 200px;
+             width: 200px;
+         }
+        </style>
+    </head>
+    <body>
+        <h1 class="center">Bienvenido a la página asociada</h1>
+        <h2 class="center rojo">Persona 5</h1>
+         <img src="imgs/persona5.webp" alt="" class="medium">  
+    </body>
+    </html>
+            ]]>
+</web_asociada>
+
+</videojuego>
+
+</Videojuegos>
