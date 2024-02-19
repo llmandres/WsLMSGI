@@ -1,0 +1,15 @@
+ul.imgsicons{
+    list-style-image: url(https://cdn-icons-png.flaticon.com/128/7642/7642157.png);
+    margin-left: 100px;
+    
+}
+ol.letrasupper{
+    list-style: upper-alpha;
+}
+ol.anidada{
+    list-style:lower-roman
+}
+ul.anidada{
+    list-style: square;
+}
+    
