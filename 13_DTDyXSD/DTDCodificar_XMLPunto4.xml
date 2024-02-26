@@ -12,7 +12,7 @@
     <!ELEMENT pais (#PCDATA)>
 
     <!ELEMENT empleados (empleado*)>
-    <!ELEMENT empleado (nombre, apellidos, DNI, extranjero, fechaNacimiento, salario, direccion_empleado* , casado)>
+    <!ELEMENT empleado (nombre, apellidos+, DNI, extranjero, fechaNacimiento, salario, direccion_empleado* , casado)>
     <!ELEMENT apellidos (#PCDATA)>
     <!ELEMENT DNI (#PCDATA)>
     <!ELEMENT extranjero (#PCDATA)>

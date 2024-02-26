@@ -3,7 +3,7 @@
   <!ELEMENT biblioteca (nombre,seccion*)>
   <!ATTLIST biblioteca codigo CDATA "B_67">
   <!ELEMENT nombre (#PCDATA)>
-  <!ELEMENT seccion (libro*)>
+  <!ELEMENT seccion (libro+)>
   <!ATTLIST seccion categoria (Novela | Ciencia_ficcion | Aventura | Historia) #REQUIRED>
   <!ATTLIST seccion pasillo CDATA #IMPLIED>
   <!ELEMENT libro (titulo,autor+,resumen?,anio?,editorial)>

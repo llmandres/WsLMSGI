@@ -3,17 +3,17 @@
 <xs:element name="empresa">
     <xs:complexType>
         <xs:sequence>
-            <xs:element name="nombre"></xs:element>
-            <xs:element name="NIF"></xs:element>
-            <xs:element name="espaniola"></xs:element>
-            <xs:element name="capitalSocial"></xs:element>
+            <xs:element name="nombre" type="xs:string"></xs:element>
+            <xs:element name="NIF" type="xs:string"></xs:element>
+            <xs:element name="espaniola" type="xs:boolean"></xs:element>
+            <xs:element name="capitalSocial" type="xs:double"></xs:element>
             <xs:element name="direccion">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="tipoVia"></xs:element>
-                        <xs:element name="nombreVia"></xs:element>
-                        <xs:element name="CP"></xs:element>
-                        <xs:element name="pais"></xs:element>
+                        <xs:element name="tipoVia" type="xs:string"></xs:element>
+                        <xs:element name="nombreVia" type="xs:string"></xs:element>
+                        <xs:element name="CP" type="xs:string"></xs:element>
+                        <xs:element name="pais" type="xs:string"></xs:element>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
@@ -23,17 +23,17 @@
                         <xs:element name="empleado" maxOccurs="unbounded">
                             <xs:complexType>
                                 <xs:sequence>
-                                    <xs:element name="nombre"></xs:element>
-                                    <xs:element name="apellidos"></xs:element>
-                                    <xs:element name="DNI"></xs:element>
+                                    <xs:element name="nombre" type="xs:string"></xs:element>
+                                    <xs:element name="apellidos" type="xs:string" minOccurs="2" maxOccurs="unbounded"></xs:element>
+                                    <xs:element name="DNI" type="xs:string"></xs:element>
                                     <xs:element name="extranjero"></xs:element>
-                                    <xs:element name="fechaNacimiento"></xs:element>
-                                    <xs:element name="salario"></xs:element>
+                                    <xs:element name="fechaNacimiento" type="xs:date"></xs:element>
+                                    <xs:element name="salario" type="xs:double"></xs:element>
                                     <xs:element name="direccion" maxOccurs="unbounded">
                                         <xs:complexType>
                                             <xs:all>
-                                                <xs:element name="direccion_empleado"></xs:element>
-                                                <xs:element name="pais"></xs:element>
+                                                <xs:element name="direccion_empleado" type="xs:string"></xs:element>
+                                                <xs:element name="pais" type="xs:string"></xs:element>
                                             </xs:all>
                                         </xs:complexType>
                                     </xs:element>
