@@ -1,59 +1,72 @@
 {
     "biblioteca": {
         "nombre": "Biblioteca Nacional",
-        "seccion": {
-            "libro": [
-                {
-                    "titulo": "El señor de los anillos",
-                    "autor": "J.R.R. Tolkien",
-                    "resumen": "Un viaje épico para destruir un anillo mágico.",
-                    "editorial": {
-                        "nombre_editorial": "Editorial Fantástica",
-                        "ciudad": "Barcelona"
+        "seccion": [
+            {
+                "categoria": "Aventura",
+                "libro": [
+                    {
+                        "titulo": "El señor de los anillos",
+                        "autor": "J.R.R. Tolkien",
+                        "resumen": "Un viaje épico para destruir un anillo mágico.",
+                        "editorial": {
+                            "nombre_editorial": "Editorial Fantástica",
+                            "ciudad": "Barcelona"
+                        }
+                    },
+                    {
+                        "titulo": "Harry Potter y la piedra filosofal",
+                        "autor": "J.K. Rowling",
+                        "resumen": "Las aventuras de un joven mago en Hogwarts.",
+                        "anio": "1997",
+                        "editorial": {
+                            "nombre_editorial": "Ediciones Mágicas",
+                            "ciudad": "Londres"
+                        }
+                    },
+                    {
+                        "titulo": "Cien años de soledad",
+                        "autor": "Gabriel García Márquez",
+                        "resumen": "La historia de la familia Buendía en Macondo.",
+                        "anio": "1967",
+                        "editorial": {
+                            "nombre_editorial": "Ediciones Macondo",
+                            "ciudad": "Bogotá"
+                        }
                     }
-                },
-                {
-                    "titulo": "Harry Potter y la piedra filosofal",
-                    "autor": "J.K. Rowling",
-                    "resumen": "Las aventuras de un joven mago en Hogwarts.",
-                    "anio": "1997",
-                    "editorial": {
-                        "nombre_editorial": "Ediciones Mágicas",
-                        "ciudad": "Londres"
+                ]
+            },
+            {
+                "categoria": "Aventura",
+                "libro": [
+                    {
+                        "titulo": "1984",
+                        "autor": "George Orwell",
+                        "resumen": "Un futuro distópico donde el pensamiento está controlado.",
+                        "anio": "1984",
+                        "editorial": {
+                            "nombre_editorial": "Editorial Distopía",
+                            "ciudad": "Londres",
+                            "codigo": "ED45TR"
+                        }
                     }
-                },
-                {
-                    "titulo": "Cien años de soledad",
-                    "autor": "Gabriel García Márquez",
-                    "resumen": "La historia de la familia Buendía en Macondo.",
-                    "anio": "1967",
-                    "editorial": {
-                        "nombre_editorial": "Ediciones Macondo",
-                        "ciudad": "Bogotá"
+                ]
+            },
+            {
+                "categoria": "Ciencia ficcion",
+                "libro": [
+                    {
+                        "titulo": "Fundación",
+                "autor": "Isaac Asimov",
+                "resumen": "La historia de la Fundación para prever el futuro galáctico.",
+                "anio": "1951",
+                "editorial": {
+                    "nombre_editorial": "Ediciones Galácticas",
+                    "ciudad": "Nueva York"
+                        }
                     }
-                },
-                {
-                    "titulo": "1984",
-                    "autor": "George Orwell",
-                    "resumen": "Un futuro distópico donde el pensamiento está controlado.",
-                    "anio": "1984",
-                    "editorial": {
-                        "nombre_editorial": "Editorial Distopía",
-                        "ciudad": "Londres",
-                        "codigo": "ED45TR"
-                    }
-                },
-                {
-                    "titulo": "Fundación",
-                    "autor": "Isaac Asimov",
-                    "resumen": "La historia de la Fundación para prever el futuro galáctico.",
-                    "anio": "1951",
-                    "editorial": {
-                        "nombre_editorial": "Ediciones Galácticas",
-                        "ciudad": "Nueva York"
-                    }
-                }
-            ]
-        }
+                ]
+            }
+        ]
     }
 }
