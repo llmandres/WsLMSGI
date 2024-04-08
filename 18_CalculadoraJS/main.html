@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script type="text/javascript" src="/18_CalculadoraJS/calculadora.js"></script>
+    <style>
+
+        h1{
+            color:chocolate
+        }
+        fieldset{
+
+            background-color:antiquewhite
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+    <form>
+        <h1>Calculadora</h1>
+        Introduzca el primer numero de la operacion :   <input id="n1" type="text" >
+        <br>
+        <br>
+        Introduzca el segundo numero de la operacion : <input id="n2" type="text" >
+        <br>
+        <button onclick="suma(); return false;">Sumar</button>
+        <button onclick="resta(); return false;">Restar</button>
+        <button onclick="multiplicacion(); return false;">Multiplicar</button>
+        <button onclick="division(); return false;">Dividir</button>
+        <br>
+        <br>
+        El resultado es : <input id="nResultado" type="text" readonly>
+        
+    </form>
+</fieldset>
+    
+    
+    
+</body>
+</html>

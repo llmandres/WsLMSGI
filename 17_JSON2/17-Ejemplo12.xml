@@ -17,7 +17,6 @@
   <!ELEMENT ciudad (#PCDATA)>
 
   <!ENTITY tolkien "J.R.R. Tolkien">
-
 ]>
 <biblioteca codigo="B_67">
   <nombre>Biblioteca nacional</nombre>

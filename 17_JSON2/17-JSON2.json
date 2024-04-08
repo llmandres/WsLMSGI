@@ -2,9 +2,9 @@
     "biblioteca": {
         "nombre": "Biblioteca Nacional",
         "seccion": [
-            {
+            {   
                 "categoria": "Aventura",
-                "libro": [
+                "libros": [
                     {
                         "titulo": "El señor de los anillos",
                         "autor": "J.R.R. Tolkien",
@@ -57,12 +57,12 @@
                 "libro": [
                     {
                         "titulo": "Fundación",
-                "autor": "Isaac Asimov",
-                "resumen": "La historia de la Fundación para prever el futuro galáctico.",
-                "anio": "1951",
-                "editorial": {
-                    "nombre_editorial": "Ediciones Galácticas",
-                    "ciudad": "Nueva York"
+                        "autor": "Isaac Asimov",
+                        "resumen": "La historia de la Fundación para prever el futuro galáctico.",
+                        "anio": "1951",
+                        "editorial": {
+                            "nombre_editorial": "Ediciones Galácticas",
+                            "ciudad": "Nueva York"
                         }
                     }
                 ]

@@ -13,27 +13,53 @@
             "nombre" : "Juan",
             "apellidos" : "Sanchez Gimenez",
             "DNI" : "Y4526607Z",
+            "fecha_nacimiento" : "20/03/1990",
             "direccion" : {
                 "tipo_via" : "Avenida",
                 "nombre_via" : "Avenida de las flores",
                 "codigo_postal" : 27384,
                 "pais": "España"
             }
+        },
         {
-                "id" : 1,
-                "nombre" : "Juan",
-                "apellidos" : "Sanchez Gimenez",
-                "DNI" : "Y4526607Z",
+                "id" : 2,
+                "nombre" : "Maria",
+                "apellidos" : "Socorro Moya",
+                "DNI" : "X2964126R",
+                "fecha_nacimiento" : "10/06/1979",
                 "direccion" : {
                     "tipo_via" : "Avenida",
-                    "nombre_via" : "Avenida de las flores",
-                    "codigo_postal" : 27384,
+                    "nombre_via" : "Avenida de Fuenlabrada",
+                    "codigo_postal" : 28495,
                     "pais": "España"
                 }
 
+        },
+        {
+            "id" : 3,
+            "nombre" : "Juan",
+            "apellidos" : "Pablo Perez",
+            "DNI" : "X5041505C",
+            "fecha_nacimiento" : "02/03/2000",
+            "direccion" : {
+                "tipo_via" : "Calle",
+                "nombre_via" : "Calle Acacia",
+                "codigo_postal" : 24739,
+                "pais": "España"
+            }
+    }
+    ],
+    "compania" : {
+        "id" : 1,
+        "nombre" : "Sega",
+        "NIF" : "78735639S",
+        "direccion" : {
+            "tipo_via" : "Calle",
+            "nombre_via" : "4-chōme-22-15 Ōi",
+            "codigo_postal" : "Tokyo 140-0014",
+            "pais": "Japon"
         }
-    ]
+
+    }
 } 
-
-
 }
