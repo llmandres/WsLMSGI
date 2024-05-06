@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/19_JavaScript/actividad19.js"></script>
+</head>
+<body>
+    <fieldset>
+    <h2>Contador numeros pares</h2>
+    <input type="text" id="range" value="">
+    <button onclick="contadorNumerosPares()">Resultado</button>
+    <br>
+    <br>
+    <label for="">Resultado: </label><input type="text" id="resultadoPares">
+    </fieldset>
+<br>
+<fieldset>
+<h2>Conversor Celsius / Fahrenheit</h2>
+<p>A que unidad lo quieres pasar</p>
+<select name="Conversor" id="conversor">
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+    </select>
+    <p>Introduce el valor a convertir</p><input type="text" id="valorConvertir">
+    <button onclick="conversorTemperatura()">Mostrar resultado</button> 
+    <br>
+    <br>
+    <label for="">Resultado: </label><input type="text" id="resultadoConversor">
+</fieldset>
+<br>
+<fieldset>
+<h2>Juego adivina el número</h2>
+<p>Introduce un numero del 1 al 10</p>
+<input type="text" id="aleatorioIntroducido">
+<button onclick="numeroRandom(); return false;"> Mostrar resultado</button> <br>
+<br>
+<label for="">Resultado: </label><input type="text" id="aleatorioResultado">
+</fieldset>
+<br>
+<fieldset>
+<h2>Cambiar el color de la pantalla</h2>
+<label for="">Introduce el color en formato HEX</label><input type="text" id="colorHEX">
+<button onclick="cambiarColor()">Cambiar color</button>
+</fieldset>
+<br>
+<fieldset>
+<h2>Iniciar Sesion</h2>
+<label for="">Usuario : </label> <input type="text" id="user"> <br>
+<br>
+<label for="">Contraseña : </label> <input type="text" id="pass"> <br> <br>
+<button onclick="login()">Login</button>
+<br>
+<Label>Resultado </Label><input type="text" id="loginresultado"> <br>
+</fieldset>
+<br>
+<fieldset>
+<h2>Verificador de números primos</h2>
+<p>Introduce un numero para verificar si es primo</p> <input type="text" id="valorInPrimo">
+<button onclick="esPrimo()">Mostrar Resultado</button>
+<br>
+<br>
+<input type="text" id="esONoPrimo">
+<br>
+</fieldset>
+<br>
+<fieldset>
+<h2>Fibonacci</h2>
+<p>Introduce hasta que numero quieres que sea: </p><input type="text" id="valueN"><br>
+<button onclick="fibonacci()">Empezar secuencia</button>
+<br>
+<br>
+<p>Secuencia : </p><input type="text" style="width: 400px;" id="secuencia">
+</fieldset>
+</body>
+</html>
